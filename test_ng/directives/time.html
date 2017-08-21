@@ -1,0 +1,9 @@
+<select ng-model="day">
+    <option ng-repeat="day in number(daysInMonth) track by $index" ng-value="$index + 1" ng-bind="$index + 1"></option>
+</select>
+
+<select ng-model="month">
+    <option ng-repeat="m in listOfMonths track by $index" ng-value="$index" ng-bind="m"></option>
+</select>
+
+<input type="text" ng-model="year">
